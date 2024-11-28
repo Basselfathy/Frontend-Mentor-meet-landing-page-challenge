@@ -1,0 +1,71 @@
+@use 'variables' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	// border: 1px solid darkslategrey;
+}
+
+body {
+	display: grid;
+	justify-items: center;
+	align-content: start;
+	font-family: "Red Hat Display", serif;
+	line-height: 1.5;
+	letter-spacing: 0;
+	text-align: center;
+	background-color: $bg-color;
+	-webkit-font-smoothing: antialiased;
+	min-height: 100vh;
+    min-height: 100dvh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+
+a{
+	text-decoration: none;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}

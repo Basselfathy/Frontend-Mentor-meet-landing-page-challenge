@@ -1,0 +1,49 @@
+/* colors */
+$color-cyan-300: #8fe3f9;
+$color-cyan-600: #4d96a9;
+$color-purple-300: #d9b8ff;
+$color-purple-600: #855fb1;
+$color-slate-300: #d1d1df;
+$color-slate-600: #87879d;
+$color-slate-900: #28283d;
+$color-white: #fafafa;
+
+/* spacings */
+$spacing-50: 0.25rem;
+$spacing-100: 0.5rem;
+$spacing-200: 1rem;
+$spacing-300: 1.5rem;
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+$spacing-700: 3.5rem;
+$spacing-800: 4rem;
+$spacing-900: 4.5rem;
+$spacing-1000: 5rem;
+$spacing-1400: 7rem;
+
+$bg-color: $color-white;
+$cyan-text: $color-cyan-600;
+$cyan-light-text: $color-cyan-300;
+$purple-light-text: $color-purple-300;
+$dark-text: $color-slate-900;
+$dark-light-text: $color-slate-600;
+$light-text: $color-white;
+$cyan-btn: $color-cyan-600;
+$purple-btn: $color-purple-600;
+
+/* fonts */
+$fs-desktop-preset-3: 1rem;
+$fs-desktop-preset-5: 1rem;
+$fs-desktop-preset-4: 1.125rem;
+$fs-desktop-preset-2: 2.5rem;
+$fs-desktop-preset-1: 4rem;
+$fs-mobile-preset-3: 0.75rem;
+$fs-mobile-preset-2: 2rem;
+$fs-mobile-preset-1: 2.5rem;
+$fs-tablet-preset-3: 0.875rem;
+$fs-tablet-preset-4: 1rem;
+$fs-tablet-preset-2: 2.25rem;
+$fs-tablet-preset-1: 3rem;
+$lh-preset-5:1.5;
+
+$padding-inline-32: $spacing-400;

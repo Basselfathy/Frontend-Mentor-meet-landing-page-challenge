@@ -1,0 +1,65 @@
+@use 'variables' as *;
+@use 'functions' as *;
+$preset-styles: (
+	preset-1: (
+		font-size: clamp($fs-mobile-preset-1, 4vw + 1rem, $fs-desktop-preset-1),
+		font-weight: 900,
+        line-height: 1.1,
+	),
+	preset-2: (
+		font-size: clamp($fs-mobile-preset-2, 4vw + 1rem, $fs-desktop-preset-2),
+		font-weight: 900,
+        line-height: 1.1,
+	),
+	preset-3: (
+		font-size: clamp($fs-mobile-preset-3, 4vw + 1rem, $fs-desktop-preset-3),
+		font-weight: 900,
+		letter-spacing: 0.25rem,
+	),
+	preset-4: (
+		font-size: clamp($fs-tablet-preset-4, 4vw + 1rem, $fs-desktop-preset-4),
+		font-weight: 500,
+	),
+	preset-5: (
+		font-size: clamp($fs-tablet-preset-4, 4vw + 1rem, $fs-desktop-preset-5),
+		font-weight: 900,
+	),
+);
+
+@mixin apply-preset($preset-name) {
+	@each $property, $value in map-get($preset-styles, $preset-name) {
+		#{$property}: #{$value};
+	}
+}
+
+@mixin btn-hover($base-color) {
+    &:hover {
+        background-color: lighten($base-color, 7%);
+    }
+}
+
+@mixin text-shadow-white {
+    text-shadow: 
+        1px 1px 0 $color-white,
+        -1px 1px 0 $color-white,
+        1px -1px 0 $color-white,
+        -1px -1px 0 $color-white,
+        0 1px 0 $color-white,
+        0 -1px 0 $color-white,
+        1px 0 0 $color-white,
+        -1px 0 0 $color-white;
+}
+
+/* media queries */
+
+@mixin tab-to-lower {
+    @media only screen and (max-width: to-rem(1120)) {
+        @content;
+    }
+}
+
+@mixin tab-to-higher {
+    @media only screen and (min-width: to-rem(768)) {
+        @content;
+    }
+}
